@@ -262,7 +262,7 @@ input{
 }
 
 .home__data-subtitle{
-
+    text-shadow: 3px 3px 3px #000;
     display: block;
     font-weight: var(--font-semi-bold);
     /* margin-bottom: var(--mb-0-75); */
@@ -271,9 +271,11 @@ input{
 
 .home__data-title{
     /* position: absolute; */
-    font-size: 1.5rem;
-    font-weight: var(--font-medium);
+    font-size: 1.8rem;
+    font-weight: bold;
     margin-bottom: var(--mb-2-5);
+    text-shadow: 3px 3px 3px #000;
+    
 }
 
 /* .home__social{
@@ -724,6 +726,27 @@ input{
     background-color: var(--text-color-light);
 }
 
+
+/* form  */
+.feedback {
+    display: flex;
+    flex-direction: row;
+    
+    /* max-width: 400px; */
+    width: 100%;
+    height: 100%;
+    /* margin: 0 auto; */
+    justify-content: center;
+    /* position: relative; */
+}
+.one,
+.two{
+    margin: 20px;
+}
+.two{
+    margin-right: 20px;
+}
+
 /* media queries  */
 @media screen and (max-width:340px){
     .place__container{
@@ -762,7 +785,7 @@ input{
     }
     .home__data-title{
         /* position: relative; */
-        font-size: 1.3rem;
+        font-size: 2rem;
         /* bottom: 1rem; */
     }
 }
@@ -820,7 +843,7 @@ input{
     }
     .home__data-title{
         /* position: relative; */
-        font-size: 1.6rem;
+        font-size: 2.5rem;
         /* bottom: 1rem; */
 
     }
@@ -871,8 +894,9 @@ input{
     
     .feedback {
         /* display: flex; */
-        flex-direction: column;
+        /* flex-direction: column; */
         /* max-width: 400px; */
+        /* flex-wrap: wrap; */
         width: 89%;
         /* margin: 0 auto; */
         justify-content: space-around;
@@ -902,7 +926,7 @@ input{
     }
     .home__data-title{
         /* position: relative; */
-        font-size: 2rem;
+        font-size: 2.8rem;
         /* bottom: 1rem; */
 
     }
@@ -971,24 +995,6 @@ input{
     }
 }
 
-/* form  */
-.feedback {
-    display: flex;
-    flex-direction: row;
-    /* max-width: 400px; */
-    width: 100%;
-    height: 100%;
-    /* margin: 0 auto; */
-    justify-content: center;
-    /* position: relative; */
-}
-.one,
-.two{
-    margin: 20px;
-}
-.two{
-    margin-right: 20px;
-}
 
 .cont input[type="text"],
 .cont input[type="email"],
