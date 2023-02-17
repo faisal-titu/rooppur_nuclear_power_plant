@@ -36,51 +36,51 @@ window.addEventListener('scroll', scrollHeader)
 
 
 
-// var swiper = new Swiper(".discover__container", {
-//     effect: "coverflow",
-//     grabCursor: true,
-//     centeredSlides: true,
-//     slidesPerView: "auto",
-//     loop: true,
-//     spaceBetween: 20,
-//     coverflowEffect: {
-//       rotate: 50,
+var swiper = new Swiper(".discover__container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 20,
+    coverflowEffect: {
+      rotate: 50,
       
-//     },
-//     pagination: {
-//       el: ".swiper-pagination",
-//     },
-// });
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+});
 
-//video
+video
 
-// const videoFile = document.getElementById('video-file'),
-//       videoButton = document.getElementById('video-button'),
-//       videoIcon = document.getElementById('video-icon')
+const videoFile = document.getElementById('video-file'),
+      videoButton = document.getElementById('video-button'),
+      videoIcon = document.getElementById('video-icon')
 
-// function playPause(){
-//     if(videoFile.paused){ 
-//         videoFile.play();
+function playPause(){
+    if(videoFile.paused){ 
+        videoFile.play();
 
-//         videoIcon.classList.add('ri-pause-line')
-//         videoIcon.classList.remove('ri-play-line')
-//     }else{
-//         videoFile.pause()
+        videoIcon.classList.add('ri-pause-line')
+        videoIcon.classList.remove('ri-play-line')
+    }else{
+        videoFile.pause()
 
-//         videoIcon.classList.remove('ri-pause-line')
-//         videoIcon.classList.add('ri-play-line')
+        videoIcon.classList.remove('ri-pause-line')
+        videoIcon.classList.add('ri-play-line')
 
-//     }
-// }
+    }
+}
   
-// videoButton.addEventListener('click', playPause)
+videoButton.addEventListener('click', playPause)
 
-// function finalVideo(){
-//     videoIcon.classList.remove('ri-pause-line')
-//     videoIcon.classList.add('ri-play-line')
-// }
+function finalVideo(){
+    videoIcon.classList.remove('ri-pause-line')
+    videoIcon.classList.add('ri-play-line')
+}
 
-// videoFile.addEventListener('ended', finalVideo)
+videoFile.addEventListener('ended', finalVideo)
 
 
 // scroll Up
@@ -114,16 +114,16 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 
 
-// // scroll animation 
-// const sr = ScrollReveal({
-//     distance: '60px',
-//     duration: 2400,
-// })
+// scroll animation 
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2400,
+})
 
-// sr.reveal(`.home__data, .home__social-link, .home__info`,{
-//     origin: 'top',
-//     interval: 100,
-// })
+sr.reveal(`.home__data, .home__social-link, .home__info`,{
+    origin: 'top',
+    interval: 100,
+})
 
 
 
